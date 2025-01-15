@@ -7,18 +7,26 @@ export default {
     component: Button,
 };
 
-
 // Template function to create Button story
 const Template = (args) => <Button {...args} />;
 
 // Story variants
 export const Primary = Template.bind({});
 Primary.args = {
-    children: "Click Me",
+    children: "Trade",
+    variant: "primary",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-    children: "Secondary Button",
+    children: "Trade",
+    variant: "secondary",
     // Place props for styling secondary button here
+};
+
+export const Ghost = Template.bind({});
+Ghost.args = {
+    children: "Trade",
+    variant: "ghost",
+    // Place props for styling ghost button here
 };

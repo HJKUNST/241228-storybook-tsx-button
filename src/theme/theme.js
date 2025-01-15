@@ -2,8 +2,8 @@
 
 export const theme = {
     colors: {
-        primary: '#007bff',
-        secondary: '#6c757d',
+        primary: '#514DFF',
+        secondary: '#8684FF',
     },
     // Add theme tokens - fonts, spacing, etc...
 };
