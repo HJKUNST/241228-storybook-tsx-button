@@ -19,6 +19,9 @@
     "build-storybook": "storybook build"
   },
   "eslintConfig": {
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "warn"
+    },
     "extends": [
       "react-app",
       "react-app/jest",
@@ -54,7 +57,7 @@
     "eslint-plugin-storybook": "^0.11.1",
     "prop-types": "^15.8.1",
     "storybook": "^8.4.7",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "webpack": "^5.97.1"
   }
 }

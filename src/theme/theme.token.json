@@ -1,0 +1,172 @@
+{
+    "$metadata": {
+        "version": "1.0.0",
+        "author": "Laura Kim",
+        "date": "2025-01-05"
+    },
+
+    "$description": "Organizing design tokens with themes on figma",
+    "color":{
+        "$description": "Main colors used",
+        "$type": "color",
+
+        "_🖍️ comment": "Consistent Nesting : '$value' only at the lowest level to indicate a specific token value",
+        
+        "primary": {
+            "$hue": "primary",
+            "$value":"#504dff",
+            "ghost-disabled":"#282780"
+        },
+
+        "secondary": {
+            "$hue": "secondary",
+            "$value": "#8684ff",
+            "hover": {
+                "$value": "#a6a5ff"
+            }
+        },
+
+        "grayscale" : {
+            "$hue": "white",
+            "$value":"#ffffff",
+            "gray1": {
+                "$value" : "#7c90B0"
+            },
+            "gray2": {
+                "$value" : "#6B7483"
+            },
+            "gray2.5": {
+                "$value" : "#292e38"
+            },
+            "gray3": {
+                "$value" : "#191D24"
+            },
+            "gray4": {
+                "$value" : "#141619"
+            },
+            "background":{
+                "$value" : "#0f1015"
+            }
+        },
+
+        "red": {
+            "$hue": "red",
+            "$value": "#ff475c",
+            "text": {
+                "$value": "#ff5877"
+            },
+            "pressed": {
+                "$value": "#7b232f"
+            },
+            "hover": {
+                "$value": "#FBA2AE"
+            },
+            "disabled": {
+                "$value": "#c9828b"
+            }
+        },
+        
+        "green": {
+            "$hue": "green",
+            "green1": {
+                "$value": "#09cc88"
+            },
+            "green2": {
+                "$value": "#00ffaa"
+            },
+            "pressed": {
+                "$value": "#076642"
+            },
+            "hover": {
+                "$value": "#9bf0d0"
+            },
+            "disabled": {
+                "$value": "#7dc0a6"
+            }
+        }
+    },
+
+    "typeface":{
+        "$description": "Simple yet intuitive, using Pretendard as main font",
+        "$type": "fontFamily",
+        "primary":{
+            "$value": "Pretendard"
+        }
+    },
+    "fontWeight":{
+        "$description": "Mainly bold and regular, implynig hierarchy",
+        "$type": "fontWeight",
+        "regular": {
+            "$value": 400
+        },
+        "bold": {
+            "$value": 700
+        }
+    },
+    "fontSize":{
+        "$description": "differs between informative - non-informative texts",
+        "$type": "size",
+        "unit": "px",
+        "0":{
+            "$value": 20
+        },
+        "1": {
+            "$value": 18
+        },
+        "2": {
+            "$value": 16
+        },
+        "3": {
+            "$value": 14
+        },
+        "4": {
+            "$value": 12
+        },
+        "5": {
+            "$value": 10
+        }
+    },
+
+    "typeStyles" : {
+        "$description" : "Type styles constructed with the fontFamily, fontWeight, fontSize",
+        "bold": {
+            "$type": {
+                "typeface": "Primary",
+                "fontWeight": 700
+            },
+            "bold-0": {
+                "$value": 20
+            },
+            "bold-1": {
+                "$value": 18
+            },
+            "bold-2": {
+                "$value": 16
+            },
+            "bold-3": {
+                "$value": 14
+            }
+        },
+        "regular": {
+            "$type": {
+                "typeface": "Primary",
+                "fontWeight": 400
+            },
+            "regular-1": {
+                "$value": 18
+            },
+            "regular-2": {
+                "$value": 16
+            },
+            "regular-3": {
+                "$value": 14
+            },
+            "regular-4": {
+                "$value": 12
+            },
+            "regular-5": {
+                "$value": 10
+            }
+        }
+    }
+}
