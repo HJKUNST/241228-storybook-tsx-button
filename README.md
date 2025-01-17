@@ -1,6 +1,6 @@
 # Deleting the original README.md and re-typing one.
 
-## I personally hated the original README which was automatically generated and be shown on the main of my repository.
+I personally hated the original README which was automatically generated and be shown on the main of my repository.
 
 ## Outline
 
