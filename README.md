@@ -9,7 +9,7 @@ I personally hated the original README which was automatically generated and be 
 2. Revising the styles
    [v] Done 250115
 3. Use color tokens instead of the hard-coded values.
-   [ ] till 250119
+   [v] till 250119
 
 ## Resources
 
