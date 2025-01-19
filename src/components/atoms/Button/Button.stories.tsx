@@ -30,3 +30,9 @@ Ghost.args = {
     variant: "ghost",
     // Place props for styling ghost button here
 };
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    children: "Trade",
+    variant: "disabled",
+}

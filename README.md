@@ -4,11 +4,13 @@ I personally hated the original README which was automatically generated and be 
 
 ## Outline
 
-1. Copying the original code
+1. Copying the original code </br>
    [v] Done 241228
-2. Revising the styles
+2. Revising the styles </br>
    [v] Done 250115
-3. Use color tokens instead of the hard-coded values.
+3. Use color tokens instead of the hard-coded values. </br>
+   [v] till 250119 - Done 250117
+4. Adding additional button variants
    [ ] till 250119
 
 ## Resources

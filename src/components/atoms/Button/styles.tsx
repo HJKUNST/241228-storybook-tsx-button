@@ -5,7 +5,7 @@ import { color, typeface, fontWeight, fontSize } from "../../../theme/theme.toke
 
 interface Props {
     color?:string;
-    variant?: "primary" | "secondary" | "ghost"; //추가된 variant prop
+    variant?: "primary" | "secondary" | "ghost" | "disabled"; //추가된 variant prop
 }
 
 export const useStyles = createUseStyles <string, Props>(() => ({
@@ -17,6 +17,9 @@ export const useStyles = createUseStyles <string, Props>(() => ({
             if (props.variant === "ghost") {
                 return "rgba(81, 77, 255, 0.05)"
             }
+            if (props.variant === "disabled") {
+                return color.primary["ghost-disabled"];
+            }
             return props.color ?? color.primary.$value;
         },
         color: (props) => {
@@ -25,6 +28,9 @@ export const useStyles = createUseStyles <string, Props>(() => ({
             }
             if (props.variant === "ghost") {
                 return color.secondary.$value;
+            }
+            if (props.variant === "disabled") {
+                return "#808080";
             }
             return color.grayscale.$hue;
         },
@@ -51,8 +57,12 @@ export const useStyles = createUseStyles <string, Props>(() => ({
                 : "none",
         cursor: 'pointer',
         borderRadius: '8px',
+
         '&:hover': {
             background: (props) => {
+                if (props.variant === "disabled") {
+                    return null; // disabled 상태에선 hover 스타일 적용 안 함
+                }
                 if (props.variant === "secondary") {
                     return color.secondary.hover.$value;
                 }
@@ -62,5 +72,22 @@ export const useStyles = createUseStyles <string, Props>(() => ({
                 return color.secondary.$value;
             },
         },
+
+        /* '&:hover': (props) => {
+            if (props.variant === "disabled") {
+                return {};
+            }
+            return {
+                background: (() => {
+                    if (props.variant === "secondary") {
+                        return color.secondary.hover.$value;
+                    }
+                    if (props.variant === "ghost") {
+                        return "rgba(81, 77, 255, 0.15)";
+                    }
+                    return color.secondary.$value;
+                })(),
+            };
+        }, */
     },
 }));

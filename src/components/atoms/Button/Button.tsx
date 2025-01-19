@@ -5,7 +5,7 @@ import { useStyles } from './styles';
 
 interface ButtonProps {
     color?: string;
-    variant?: "primary" | "secondary" | "ghost"; //variant 추가해서 secondary button 만들 수 있게 하기
+    variant?: "primary" | "secondary" | "ghost" | "disabled"; //variant 추가해서 secondary button 만들 수 있게 하기
     children: React.ReactNode;
     onClick?: () => void;
 }
