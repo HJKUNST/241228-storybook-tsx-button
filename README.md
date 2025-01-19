@@ -11,7 +11,7 @@ I personally hated the original README which was automatically generated and be 
 3. Use color tokens instead of the hard-coded values. </br>
    [v] till 250119 - Done 250117
 4. Adding additional button variants
-   [ ] till 250119
+   [v] till 250119
 
 ## Resources
 
